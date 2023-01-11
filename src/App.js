@@ -1,5 +1,7 @@
 import "./App.css";
-import Scarecrow from "./Scarecrow.png";
+import Badnews from "./Components/Badnews";
+import Scarecrow from "./Components/Scarecrow";
+// import Scarecrow from "./Components/Scarecrow";
 
 function App() {
   return (
@@ -9,18 +11,8 @@ function App() {
       </header>
       <section>
         <div className="container-scare">
-          <div className="left-side">
-            <img src={Scarecrow} alt="scarecrow" />
-          </div>
-
-          <div className="right-side">
-            <h1>I have bad news for you</h1>
-            <p>
-              The page you are looking for might be removed or is temporarily
-              unavaible
-            </p>
-            <button className="btn-black">BACK TO HOMEPAGE</button>
-          </div>
+          <Scarecrow />
+          <Badnews />
         </div>
       </section>
     </div>
