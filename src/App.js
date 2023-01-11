@@ -1,5 +1,6 @@
 import "./App.css";
 import Badnews from "./Components/Badnews";
+import Footer from "./Components/Footer";
 import Scarecrow from "./Components/Scarecrow";
 // import Scarecrow from "./Components/Scarecrow";
 
@@ -14,6 +15,7 @@ function App() {
           <Scarecrow />
           <Badnews />
         </div>
+        <Footer />
       </section>
     </div>
   );

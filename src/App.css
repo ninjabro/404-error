@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -89,25 +89,51 @@ img {
   object-fit: cover;
 }
 
+.footer {
+  margin-top: 100px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #bdbdbd;
+  text-align: center;
+  align-items: center;
+  margin-left: 50%;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .container,
   .container-scare {
     flex-direction: column;
   }
+  .container {
+    display: flex;
+  }
+  .container-scare {
+    margin: 5px;
+  }
 
   .right-side {
-    margin: 0 10px auto 0;
+    margin: 0 10px auto 70px;
+    padding-left: 10%;
   }
   .left-side {
     margin-left: 0px;
   }
   img {
-    max-width: 100%;
+    max-width: 250px;
+
     object-fit: cover;
   }
   p {
     font-size: 20px;
-    max-width: 450px;
+    max-width: 400px;
     line-height: 3rem;
   }
   h1 {
@@ -115,5 +141,26 @@ img {
     /* letter-spacing: -0.2rem; */
     word-spacing: 0.8rem;
     line-height: 5rem;
+    max-width: 400px;
+  }
+
+  .footer {
+    margin-top: 100px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: #bdbdbd;
+    font-size: 50px;
+    margin-left: 5%;
+    margin-bottom: 2px;
+    margin-top: 40%;
+  }
+  a {
+    text-decoration: none;
+  }
+  .btn-black {
+    margin-top: 50px;
+  }
+  .footer p {
+    font-size: 10px;
   }
 }
