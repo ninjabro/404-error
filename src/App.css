@@ -1,38 +1,75 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Space Mono', monospace; */
+
+.container {
+  background-color: #ffffff;
+  background-position: center;
+  display: flex;
+  flex-direction: row; /* max-width: 350px;
+  height: 850px; */
+}
+
+h3 {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h1 {
   text-align: center;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 64px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-black {
+  position: absolute;
+  width: 216px;
+  height: 68px;
+  color: white;
+  background-color: #333333;
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-side {
+  position: absolute;
+  height: 100%;
+  width: 350px;
+}
+
+.container-scare {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+}
+
+.right-side {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 500px;
+  gap: 20px;
+  /* margin: 20px 40px 20px 10px; */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  max-width: 100%;
 }
